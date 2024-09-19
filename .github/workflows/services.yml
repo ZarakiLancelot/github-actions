@@ -10,7 +10,7 @@ jobs:
       mysql:
         image: mysql:5.7
         env:
-          MYSQL_ROOT_PASSWORD: root
+          MYSQL_ROOT_PASSWORD: ${{ vars.MYSQL_ROOT_PASSWORD }}
         ports:
           - 3306:3306
 
@@ -21,4 +21,4 @@ jobs:
 
     steps:
       - name: Verify installation
-        run: ls
+        run: echo "El valor de mi variable de entorno es ${{ vars.MYSQL_ROOT_PASSWORD }}"
