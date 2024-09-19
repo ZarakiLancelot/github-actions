@@ -22,3 +22,6 @@ jobs:
     steps:
       - name: Verify installation
         run: echo "El valor de mi variable de entorno es ${{ vars.MYSQL_ROOT_PASSWORD }}"
+
+      - name: Secret
+        run: echo "Mi SECRET es ${{ secrets.SECRET_FOR_ACTION }}"
