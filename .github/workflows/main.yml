@@ -13,7 +13,7 @@ jobs:
       - name: Hola mundo action
         uses: ./.github/actions/hola-mundo
         with:
-          name: 'Popochos'
+          message: 'Popochos'
 
       - name: Install
         run: |
