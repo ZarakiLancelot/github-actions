@@ -6,3 +6,9 @@ jobs:
     steps:
       - name: Hola mundo
         run: echo "Hola mundo"
+
+  list:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Listar
+        run: ls -al
