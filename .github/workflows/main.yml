@@ -19,3 +19,6 @@ jobs:
         uses: actions/setup-node@v4.0.3
         with:
           node-version: 18
+
+      - name: Node version
+        run: node -v
