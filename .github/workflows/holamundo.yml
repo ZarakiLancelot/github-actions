@@ -10,5 +10,17 @@ jobs:
   list:
     runs-on: ubuntu-latest
     steps:
-      - name: Listar
+      - name: List
         run: ls -al
+
+  file:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create file
+        run: touch hola.txt
+
+      - name: Add text
+        run: echo "Hola mundo" >> hola.txt
+
+      - name: Read file
+        run: cat hola.txt
