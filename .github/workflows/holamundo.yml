@@ -1,5 +1,5 @@
 name: Hola mundo
-on: [push]
+on: [push, pull_request]
 jobs:
   hola:
     runs-on: ubuntu-latest
