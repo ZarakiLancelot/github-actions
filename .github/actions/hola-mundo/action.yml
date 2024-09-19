@@ -1,0 +1,11 @@
+name: "Hola Mundo"
+description: "Imprime Hola Mundo"
+author: "Edwin Einsen Vásquez Velásquez"
+
+runs:
+  using: "composite"
+
+  steps:
+    - name: Hola mundo
+      run: echo "Hola mundo"
+      shell: bash

@@ -10,6 +10,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Hola mundo action
+        uses: ./.github/actions/hola-mundo
+
       - name: Install
         run: |
           chmod +x script.sh
